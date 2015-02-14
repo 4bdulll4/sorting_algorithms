@@ -32,20 +32,20 @@ public class sorting_GUI extends JFrame{
 	{
 		super("Sort Me");
 		  
-		header = new JLabel("Sorting Algorithms Application");
-		bigPanel = new JPanel(new BorderLayout(GAP,GAP));
-		topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT,0,GAP));
-		centerPanel = new JPanel(new GridLayout(3,1,GAP,GAP));		
-		inputPanel =  new JPanel(new FlowLayout(FlowLayout.LEFT,HGAP,VGAP));
+		header = 		 new JLabel("Sorting Algorithms Application");
+		bigPanel = 	 	 new JPanel(new BorderLayout(GAP,GAP));
+		topPanel =	  	 new JPanel(new FlowLayout(FlowLayout.LEFT,0,GAP));
+		centerPanel = 	 new JPanel(new GridLayout(3,1,GAP,GAP));		
+		inputPanel = 	 new JPanel(new FlowLayout(FlowLayout.LEFT,HGAP,VGAP));
 		selectionPanel = new JPanel(new FlowLayout(FlowLayout.LEFT,HGAP,VGAP));
-		outputPanel = new JPanel(new FlowLayout(FlowLayout.LEFT,HGAP,VGAP));	
-		inputLabel = 	new JLabel("Select the file that you want to sort. (Recommended: .txt) ");
+		outputPanel = 	 new JPanel(new FlowLayout(FlowLayout.LEFT,HGAP,VGAP));	
+		inputLabel = 	 new JLabel("Select the file that you want to sort. (Recommended: .txt) ");
 		selectionLabel = new JLabel("Which sorting algorithm would you like to perform the sorting?");
-		outputLabel = new JLabel("Select the directory that you want to save your sorted file.");
-		browseBtn = new JButton("Browse");
-		okBtn = new JButton("OK");
-		saveBtn = new JButton("Save");
-		selectionBox = new JComboBox<String>();
+		outputLabel = 	 new JLabel("Select the directory that you want to save your sorted file.");
+		browseBtn = 	 new JButton("Browse");
+		okBtn = 		 new JButton("OK");
+		saveBtn = 		 new JButton("  Save   ");
+		selectionBox = 		 new JComboBox<String>();
 		
 	/* ------------- Big Panel ------------- */
 		bigPanel.setBorder(BorderFactory.createEmptyBorder(20,20,20,20));
@@ -69,6 +69,7 @@ public class sorting_GUI extends JFrame{
 	/* ------------- Input Panel ------------- */			
 		inputPanel.setBorder(BorderFactory.createTitledBorder("How to Input Data?   "));
 		inputPanel.add(inputLabel,BorderLayout.WEST);
+		inputPanel.add(new JLabel("                            "));
 		inputPanel.add(browseBtn);
 		
 	// -----------------------------------------;
@@ -76,6 +77,7 @@ public class sorting_GUI extends JFrame{
 	/* ------------- Output Panel ------------- */	
 		outputPanel.setBorder(BorderFactory.createTitledBorder("Where to Save?   "));
 		outputPanel.add(outputLabel);
+		outputPanel.add(new JLabel("                            "));
 		outputPanel.add(saveBtn);
 	// -----------------------------------------;	
 		
@@ -107,7 +109,4 @@ public class sorting_GUI extends JFrame{
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
-	
-	
-
 }
