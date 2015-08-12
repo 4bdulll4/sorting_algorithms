@@ -77,7 +77,6 @@ public class sortingAlgorithms {
 		case 7:
 			fileName=setSize();
 			arr = new int[N];
-			//String arrr[] = {"12","45","1","67","3","123","11"};
 			read(arr,fileName);
 			heap_sort.sort(arr);
 			break;
